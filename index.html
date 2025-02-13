@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #ffccff; /* Light pink background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: #ff66b3;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            color: #ff4d94;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInText 2s ease-in-out;
+        }
+        .heart {
+            font-size: 3em;
+            animation: floatHearts 3s infinite;
+            margin-top: 20px;
+        }
+        .cute-animals {
+            font-size: 2em;
+            margin-top: 30px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInText {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Will you be my valentine pookie?</h1>
+        <div class="heart">💖💘💖</div>
+        <div class="cute-animals">
+            <!-- You can choose to add a cute teddy bear or cats, I’ll use bear emojis for now -->
+            🧸🤍🧸
+            <br> 
+            🐱❤️🐱
+        </div>
+    </div>
+</body>
+</html>
